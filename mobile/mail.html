@@ -1,0 +1,142 @@
+﻿<html> 
+
+<head> 
+
+<title> Mail </title>
+<!-- Put this script tag to the <head> of your page -->
+
+<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="//vk.com/js/api/openapi.js?144"></script>
+
+<script type="text/javascript">
+  VK.init({apiId: 5980421, onlyWidgets: true});
+</script>
+
+</head> 
+
+
+
+<body background="fon.jpg">
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="script.js"></script>
+
+	<div>
+	<img src="repa.png" class = "repa" id = "repa" onclick = "showHide('menu');">
+	</div>
+	
+	<div class="page" id = "caption"></div>
+	
+	<input id="changeL" type="submit" class="ButtonL" onclick = "changeLanguage('FAQ');">
+		
+	<div id = "menu" style="display: none;">
+	<form action = 'index.html'><input type="submit" class="Button1" id="Button1"/></form>
+	<form action = 'theory.html'><input type="submit" class="Button2" id="Button2"/></form>
+	<form action = 'practice.html'><input type="submit" class="Button3" id="Button3"/></form>
+	<form action = 'chat.html'><input type="submit" class="Button4" id="Button4"/></form>
+	<form action = 'games.html'><input type="submit" class="Button5" id="Button5"/></form>
+	<form action = 'FAQ.html'><input type="submit" class="Button6" id="Button6"/></form>
+	</div>
+	
+<script>changeLanguage('FAQ','0');</script>
+	<script>size("caption",40,10);</script>	
+	<script>size("changeL",20,10);</script>	
+	<script>size("repa",0,10);</script>	
+	
+	
+	
+	
+	
+
+	<div id="textrus" class="show" style="font-size: 1.4em;">
+<p align="center">
+<font color="gold" style = "font-size: 4em">
+Здравствуйте!
+</font>
+</p>
+<div align="center">
+<p>
+<font color="gold" style ="font-size: 2em">
+Этот раздел сайта создан специально для связи с разработчиками.
+<br>
+Здесь вы можете отправить нам письмо.
+</font>
+</p>
+</div>
+<div align="center">
+<form action="datan.php"   method="post" >
+<font color="gold">Логин</font>
+<br>
+<input name="login">
+<br>
+<font color="gold">Пароль</font>
+<br>
+<input type="password" name="pass">
+<br>
+<br>
+<a href="Chat/reg.html"><font color="gold" style="font-size: 0.8em;">Регистрация</font></a>
+<br>
+<br>
+<textarea rows="30" cols="100" name="field1">Отправить письмо</textarea>
+<input type="submit" name="submit" value="SEND">
+</div>
+</form>
+</div>
+
+
+
+
+<div  id="texteng" class="hide" style="font-size: 1.4em;" >
+<p align="center">
+<font color="gold" style = "font-size: 4em">
+Hello!
+</font>
+</p>
+<div align="center">
+<p>
+<font color="gold" style ="font-size: 2em">
+This section of the site was created specifically for communication with developers.
+<br>
+Here you can send us an email.
+</font>
+</p>
+</div>
+<div align="center">
+<form action="datan.php"   method="post"  >
+<font color="gold">Login</font>
+<br>
+<input name="login">
+<br>
+<font color="gold">Password</font>
+<br>
+<input type="password" name="pass">
+<br>
+<br>
+<textarea rows="30" cols="100" name="field1">Send email</textarea>
+<input type="submit" name="submit" value="SEND">
+</div>
+</form>
+</div>
+	
+	
+
+
+<!-- Put this div tag to the place, where the Comments block will be -->
+<div id="vk_comments"></div>
+<script type="text/javascript">
+VK.Widgets.Comments("vk_comments", {limit: 10, attach: "*"});
+</script>
+
+
+
+
+	
+	
+	
+	
+<script>changeLanguage('FAQ','0');</script>
+	</body> 
+</html>
+

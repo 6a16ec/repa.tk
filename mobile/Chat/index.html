@@ -1,0 +1,132 @@
+<html> 
+
+<head> 
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Чатик</title>
+
+<link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css" />
+<link rel="stylesheet" type="text/css" href="css/page.css" />
+<link rel="stylesheet" type="text/css" href="css/chat.css" />
+
+</head> 
+
+
+
+<body background="fon.jpg">
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="script.js"></script>
+
+	<div>
+	<img src="repa.png" class = "repa" id = "repa" onclick = "showHide('menu');">
+	</div>
+	
+	<div class="page" id = "caption"></div>
+	
+	<input id="changeL" type="submit" class="ButtonL" onclick = "changeLanguage('Chat');">
+		
+	<div id = "menu" style="display: none;">
+	<form action = 'index.html'><input type="submit" class="Button1" id="Button1"/></form>
+	<form action = 'theory.html'><input type="submit" class="Button2" id="Button2"/></form>
+	<form action = 'practice.html'><input type="submit" class="Button3" id="Button3"/></form>
+	<form action = 'chat.html'><input type="submit" class="Button4" id="Button4"/></form>
+	<form action = 'games.html'><input type="submit" class="Button5" id="Button5"/></form>
+	<form action = 'FAQ.html'><input type="submit" class="Button6" id="Button6"/></form>
+	</div>
+	
+	<script>size("caption",40,10);</script>	
+	<script>size("changeL",20,10);</script>	
+	<script>size("repa",0,10);</script>	
+	
+	
+	
+	<div id = "textrus" class="text" style="display: none;"> 
+	<div id="chatContainer">
+
+    <div id="chatTopBar" class="rounded"></div>
+    <div id="chatLineHolder"></div>
+    
+    <div id="chatUsers" class="rounded"></div>
+    <div id="chatBottomBar" class="rounded">
+    	<div class="tip"></div>
+        
+        <form id="loginForm" method="post" action="">
+            <input id="name" name="name" class="rounded" maxlength="32" />
+            <input id="email" name="email" class="rounded" />
+            <input type="submit" class="blueButton" value="Войти" />
+        </form>
+		
+		<form id="regForm" method="post" action="reg.html">
+            
+            <input type="submit" class="blueButton2" value="Регистрация" />
+        </form>
+        
+        <form id="submitForm" method="post" action="">
+            <input id="chatText" name="chatText" class="rounded" maxlength="255" />
+            <input type="submit" class="blueButton" value="Отправить" />
+        </form>
+        
+    </div>
+    
+</div>
+</div>
+	
+	
+
+	
+	<div id = "texteng" class="text" style="display: none;"> 
+	<div id="chatContainer">
+
+    <div id="chatTopBar" class="rounded"></div>
+    <div id="chatLineHolder"></div>
+    
+    <div id="chatUsers" class="rounded"></div>
+    <div id="chatBottomBar" class="rounded">
+    	<div class="tip"></div>
+        
+        <form id="loginForm" method="post" action="">
+            <input id="name" name="name" class="rounded" maxlength="32" />
+            <input id="email" name="email" class="rounded" />
+            <input type="submit" class="blueButton" value="Login" />
+        </form>
+		
+		<form id="regForm" method="post" action="reg.html">
+            
+            <input type="submit" class="blueButton2" value="Registration" />
+        </form>
+        
+        <form id="submitForm" method="post" action="">
+            <input id="chatText" name="chatText" class="rounded" maxlength="255" />
+            <input type="submit" class="blueButton" value="Submit" />
+        </form>
+        
+    </div>
+    
+</div>
+</div>
+
+	
+	
+
+
+
+	
+	
+	
+	
+<script>changeLanguage('Chat','0');</script>
+
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script src="js/jScrollPane/jquery.mousewheel.js"></script>
+<script src="js/jScrollPane/jScrollPane.min.js"></script>
+<script src="js/script.js"></script>
+	</body> 
+</html>
+
+

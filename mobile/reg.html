@@ -1,0 +1,111 @@
+﻿<html>
+<head>
+<title>Регистрация</title>
+
+<link rel="stylesheet" type="text/css" href="js/jScrollPane/jScrollPane.css" />
+<link rel="stylesheet" type="text/css" href="css/page.css" />
+<link rel="stylesheet" type="text/css" href="css/chat.css" />
+</head>
+
+
+<body background="fon.jpg">
+
+
+
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script src="script.js"></script>
+
+	<div>
+	<img src="repa.png" class = "repa" id = "repa" onclick = "showHide('menu');">
+	</div>
+	
+	<div class="page" id = "caption"></div>
+	
+	<input id="changeL" type="submit" class="ButtonL" onclick = "changeLanguage('Chat');">
+		
+	<div id = "menu" style="display: none;">
+	<form action = 'index.html'><input type="submit" class="Button1" id="Button1"/></form>
+	<form action = 'theory.html'><input type="submit" class="Button2" id="Button2"/></form>
+	<form action = 'practice.html'><input type="submit" class="Button3" id="Button3"/></form>
+	<form action = 'chat.html'><input type="submit" class="Button4" id="Button4"/></form>
+	<form action = 'games.html'><input type="submit" class="Button5" id="Button5"/></form>
+	<form action = 'FAQ.html'><input type="submit" class="Button6" id="Button6"/></form>
+	</div>
+	
+	<script>size("caption",40,10);</script>	
+	<script>size("changeL",20,10);</script>	
+	<script>size("repa",0,10);</script>	
+
+
+
+	<div id = "textrus" class="text" style="display: none;"> 
+<div id="child">
+
+	<form action="reg.php"  method="post">
+	<p align="center">
+	<font color="gold" style="font-size: 1.4em;">*Для вашего же удобства советуем использовать только латинские буквы и цифры.</font>
+	
+	<br>
+	
+	<font color="gold" style="font-size: 1.4em;">Придумайте себе логин:</font>
+	<br>
+	<input type="text" name="username" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+
+
+	<font color="gold" style="font-size: 1.4em;">Для сохранности ваших данных придумайте пароль:</font>
+	<br>
+	<input type="password" name="password" pattern = "[A-Za-z0-9]{4,32}" required >
+	<br> 
+	<br>
+	<br>
+	
+	<input style="background: #7CFC00 ;" type="submit" name="submit" value="Регистрация">
+</p>
+	</form>
+	</div>
+	</div>
+	
+	
+	
+<div id = "texteng" class="text" style="display: none;"> 
+	<div id="child">
+	<form action="reg.php"  method="post">
+	<p align="center">
+	<font color="gold" style="font-size: 1.4em;">*For your own convenience, we recommend using only Latin letters and numbers.</font>
+	
+	<br>
+	
+	<font color="gold" style="font-size: 1.4em;">Come up with a login:</font>
+	<br>
+	<input type="text" name="username" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+
+
+	<font color="gold" style="font-size: 1.4em;">For the safety of your data, create a password:</font>
+	<br>
+	<input type="password" name="password" pattern = "[A-Za-z0-9]{4,32}" required>
+	<br>
+	<br>
+	<br>
+	
+	<input style="background: #7CFC00 ;" type="submit" name="submit" value="Register">
+</p>
+	</form>
+	</div>
+	</div>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+<script>changeLanguage('Chat','0');</script>
+	</body>
+</html>
