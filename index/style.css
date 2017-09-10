@@ -4,3 +4,4 @@
 #def{position: absolute;top:7;right:7;}
 .hide { visibility:collapse ;  font-family: Calibri; color: gold; }
 .show { visibility:visible ; font-family: Calibri; color: gold;}
+.button {font-family:Calibri, Arial;font-size: 150%;font-weight:600;background:#ADFF2F;border: 0; padding: 0;width:43px;height:41px}
