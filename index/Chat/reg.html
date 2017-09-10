@@ -16,8 +16,8 @@ document.getElementById('ruim').className='hide';
 <style type="text/css">
 #engl {position: relative;top : -185;}
 #rus {position: relative;}
-#enim {position: absolute;top : 5;right : 5;}
-#ruim {position: absolute;top : 5;right : 5;}
+#enim {position: absolute;top : 5;left : 5;}
+#ruim {position: absolute;top : 5;left : 5;}
 #child {
 position: relative;
 	top: 350;
@@ -25,6 +25,7 @@ position: relative;
 }
 .hide { visibility:collapse }
 .show { visibility:visible }
+ .button {font-family:Calibri, Arial;font-size: 150%;font-weight:600;background:#ADFF2F;border: 0; padding: 0;width:43px;height:41px}   
 </style>
 </head>
 	<body background="css/header.jpg">
@@ -50,7 +51,7 @@ position: relative;
 	<br>
 	<br>
 	
-	<input style="background: #7CFC00 ;" type="submit" name="submit" value="Регистрация">
+	<input style="background: #7CFC00 " type="submit" name="submit" value="Регистрация">
 </p>
 	</form>
 	</div>
@@ -76,16 +77,16 @@ position: relative;
 	<br>
 	<br>
 	
-	<input style="background: #7CFC00 ;" type="submit" name="submit" value="Register">
+	<input style="background: #7CFC00 " type="submit" name="submit" value="Register">
 </p>
 	</form>
 	</div>
 	</div>
 	<div id="enim" class="show">
-	<img src="Images/en.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get()">
+	<button class = "button" onclick="get()">EN</button>
 	</div>
 	<div id="ruim" class="hide">
-	<img src="Images/rus.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get1()">
+	<button class = "button" onclick="get1()">RU</button>
 	</div>
 	</body>
 </html>

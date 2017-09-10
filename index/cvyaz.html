@@ -1,7 +1,6 @@
 ﻿<html>
 <head>
 
-</script>
 <title>
 Письмо
 </title>
@@ -9,8 +8,9 @@
 <body background="Images/fon2.jpg">
 <link rel="stylesheet" type="text/css" href="style.css">
 <script src="script.js"></script>
-<div id="rus" class="show" style="font-size: 1.4em;">
-<img src="Images/en.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get()">
+<div id="rus" class="show">
+<button class = "button" onclick="get()">EN</button>
+    <font style="font-size: 1.4em;">
 <p align="center">
 <font color="gold" face="Calibri" style = "font-size: 4em">
 Здравствуйте!
@@ -41,11 +41,13 @@
 <br>
 <textarea rows="30" cols="100" name="field1">Отправить письмо</textarea>
 <input type="submit" name="submit" value="SEND">
-</div>
 </form>
+    </div>
+   </font>     
 </div>
-<div  id="engl" class="hide" style="font-size: 1.4em;" >
-<img src="Images/rus.jpg"  align="left" width="43" height="41"  vspace="7"  onclick="get1()">
+<div  id="engl" class="hide" >
+<button class = "button" onclick="get1()">RU</button>
+    <font style="font-size: 1.4em;" >
 <p align="center">
 <font face="Calibri" color="gold" style = "font-size: 4em">
 Hello!
@@ -76,8 +78,9 @@ Here you can send us an email.
 <br>
 <textarea rows="30" cols="100" name="field1">Send email</textarea>
 <input type="submit" name="submit" value="SEND">
-</div>
-</form>
+    </form>
+        </div>
+         </font>
 </div>
 </body>
 </html>
